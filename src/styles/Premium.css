@@ -1,0 +1,58 @@
+.premium {
+  flex: 0.6;
+  border-left: 1px solid var(--twitter-bordercolor);
+  border-right: 1px solid var(--twitter-bordercolor);
+  overflow-y: scroll;
+  min-width: fit-content;
+  margin: 0px 40px;
+  display: grid;
+}
+
+.premium::-webkit-scrollbar {
+  display: none;
+}
+
+.premium > h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.premium > pre {
+  margin: 10px;
+  text-align: center;
+}
+
+.premium > Button {
+  color: white !important;
+  background-color: var(--twitter-icon) !important;
+  border: none !important;
+  border-radius: 30px !important;
+  font-weight: 800 !important;
+  text-transform: inherit !important;
+  height: 40px !important;
+  margin: 20px !important;
+  font-size: 18px !important;
+  padding: 20px !important;
+}
+
+@media (max-width: 1200px) {
+  .premium {
+    flex: 0.5;
+    margin: 0px 10px;
+  }
+
+  .premium > h1 {
+    font-size: 25px;
+  }
+
+  .premium > pre {
+    font-size: 15px;
+  }
+
+  .premium > Button {
+    height: 30px !important;
+    margin: 10px !important;
+    font-size: 15px !important;
+    padding: 20px !important;
+  }
+}

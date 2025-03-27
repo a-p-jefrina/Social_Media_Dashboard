@@ -1,0 +1,10 @@
+.postBoxIcon {
+  padding: 10px;
+  margin-top: 20px;
+  color: var(--twitter-icon);
+}
+
+.postBoxIcon > .MuiSvgIcon-root {
+  font-weight: 700;
+  font-size: 20px;
+}

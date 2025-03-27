@@ -1,0 +1,43 @@
+.premiumType {
+  border: none;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsla(210, 6%, 21%, 1);
+  color: var(--twitter-color);
+}
+
+.premiumType > input[type="checkbox"] {
+  float: right;
+}
+
+.premiumType > input[type="checkbox"]:checked {
+  accent-color: var(--twitter-icon);
+}
+
+.premiumType:has(input[type="checkbox"]:checked) {
+  border: 1px solid var(--twitter-icon);
+  box-shadow: 0 0 5px var(--twitter-icon);
+}
+
+.premiumType > h3 {
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.premiumType > h2 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .premiumType > h2 {
+    font-size: 15px;
+  }
+
+  .premiumType {
+    width: 300px;
+  }
+}

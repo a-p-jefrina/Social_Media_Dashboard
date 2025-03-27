@@ -1,0 +1,72 @@
+.explorePage {
+  flex: 0.6;
+  border-left: 1px solid var(--twitter-bordercolor);
+  border-right: 1px solid var(--twitter-bordercolor);
+  overflow-y: scroll;
+  min-width: fit-content;
+  margin: 0px 40px;
+  padding: 20px;
+}
+
+.explorePage::-webkit-scrollbar {
+  display: none;
+}
+
+.explorePage__input {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--twitter-bordercolor);
+  padding: 10px;
+}
+
+.explorePage__input > input {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  padding-left: 5px;
+  font-size: medium;
+}
+
+.explorePage__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.explorePage__button > h2 {
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.explorePage__button > Button > .MuiSvgIcon-root {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+.explorePage__row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explorePage__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .explorePage {
+    flex: 0.7;
+    margin: 0px 10px;
+  }
+
+  .explorePage__button > h2 {
+    font-size: 20px;
+  }
+
+  .explorePage__button > Button > .MuiSvgIcon-root {
+    font-size: 25px;
+  }
+}

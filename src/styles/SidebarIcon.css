@@ -1,0 +1,32 @@
+.sidebarIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebarIcon:hover {
+  background-color: rgba(211, 211, 211, 0.255);
+  border-radius: 30px;
+  transition: 100ms ease-out;
+}
+
+.sidebarIcon > .MuiSvgIcon-root {
+  padding: 20px;
+  font-size: 25px;
+}
+
+.sidebarIcon > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .sidebarIcon > h2 {
+    display: none;
+  }
+
+  .sidebarIcon {
+    justify-content: center;
+  }
+}
